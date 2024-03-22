@@ -1,10 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
 export default function MarketStories() {
@@ -14,13 +8,8 @@ export default function MarketStories() {
         <CardTitle className="text-lg">Top Stories</CardTitle>
       </CardHeader>
       <CardContent>
-      <div className="flex-shrink-0 h-32 w-full relative overflow-hidden">
-          <Image
-            src="/img.png"
-            alt="img"
-            layout="fill"
-            objectFit="cover"
-          />
+        <div className="flex-shrink-0 h-32 w-full relative overflow-hidden">
+          <Image src="/img.png" alt="img" layout="fill" objectFit="cover" />
         </div>
         <p className="text-justify font-sans pt-2">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem
