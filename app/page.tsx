@@ -5,7 +5,7 @@ import MarketStories from "@/components/shared/stories";
 
 export default function Home() {
   return (
-    <main className="md:flex w-full min-h-screen md:max-w-screen-2xl md:mx-auto overflow-x-auto">
+    <main className="sm:flex w-full min-h-screen md:max-w-screen-2xl md:mx-auto overflow-x-auto">
       <SideNavBar />
       <div className="block sm:hidden">
         <Navbar />

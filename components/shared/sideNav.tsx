@@ -13,19 +13,17 @@ function SideNavBar() {
   return (
     <>
       <div
-        className={`hidden sm:flex fixed inset-y-0 left-0 z-50 items-center justify-center bg-gray-800 text-white w-12 cursor-pointer transition-all duration-300 ease-in-out ${
-          isOpen ? "ml-72" : "ml-0"
-        }`}
+        className="hidden h-full sm:flex fixed inset-y-0 left-0 z-50 items-center justify-center bg-gray-800 text-white w-12 cursor-pointer transition-all duration-300 ease-in-out ml-0"
         onClick={toggleNav}
       >
         {isOpen ? <ChevronLeftIcon className="h-6 w-6" /> : <ChevronRightIcon className="h-6 w-6" />}
       </div>
       <div
-        className={`fixed left-0 top-0 h-screen w-72 bg-gray-800 text-white z-40 transition-all duration-300 ease-in-out transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`left-0 top-0 h-screen w-72 bg-gray-800 text-white z-30 transition-all duration-300 ease-in-out transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full fixed"
         }`}
       >
-        <div className="flex size-full flex-col bg-gray-800 text-white gap-4">
+        <div className="flex h-full flex-col gap-4 pl-12">
           <div className="flex justify-between p-2 pt-4">
             <div className="flex flex-row">
               <AvatarIcon className="h-8 w-8 hover:bg-gray-700 cursor-pointer" />
