@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Separator } from "../ui/separator";
-import { AvatarIcon, BellIcon, ChevronRightIcon } from "@radix-ui/react-icons";
+import { AvatarIcon, BellIcon, ChevronLeftIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 
 function SideNavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +18,9 @@ function SideNavBar() {
         }`}
         onClick={toggleNav}
       >
-        <ChevronRightIcon className="h-6 w-6" />
+        {isOpen ? <ChevronLeftIcon className="h-6 w-6" /> : <ChevronRightIcon className="h-6 w-6" />}
       </div>
-      <aside
+      <div
         className={`fixed left-0 top-0 h-screen w-72 bg-gray-800 text-white z-40 transition-all duration-300 ease-in-out transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
@@ -61,7 +61,7 @@ function SideNavBar() {
             </li>
           </ul>
         </div>
-      </aside>
+      </div>
     </>
   );
 }
