@@ -1,19 +1,18 @@
 import DiscussionForum from "@/components/shared/discussion";
-import { MobileNav } from "@/components/shared/mobileNav";
 import Navbar from "@/components/shared/navbar";
 import SideNavBar from "@/components/shared/sideNav";
 import MarketStories from "@/components/shared/stories";
 
 export default function Home() {
   return (
-    <main className="md:flex w-full min-h-screen p-5 sm:p-4 md:max-w-screen-2xl md:mx-auto overflow-x-auto">
+    <main className="md:flex w-full min-h-screen p-0 md:max-w-screen-2xl md:mx-auto overflow-x-auto">
       <SideNavBar />
-      <div className="block md:hidden">
+      <div className="block sm:hidden">
         <Navbar />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-7 gap-3 justify-between h-full w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-7 gap-8 justify-between h-full w-full p-4">
         <div
-          className="w-full sm:col-span-6 md:col-span-5 pt-10 sm:pt-0"
+          className="w-full sm:col-span-7 md:col-span-5 pt-10 sm:pl-10 sm:pt-0"
           id="discussion"
         >
           <p className="text-4xl text-bold text-primary/60 font-serif">
@@ -24,7 +23,10 @@ export default function Home() {
           <DiscussionForum />
           <DiscussionForum />
         </div>
-        <div className="w-full sm:col-span-4 md:col-span-2" id="market">
+        <div
+          className="w-full sm:col-span-5 md:col-span-2 sm:pl-10 md:pl-0 p-4"
+          id="market"
+        >
           <p className="text-4xl text-bold text-primary/60 font-serif">
             Market Stories
           </p>
