@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-7 gap-8 justify-between h-full w-full p-4">
         <div
-          className="w-full sm:col-span-7 md:col-span-5 pt-10 sm:pl-10 sm:pt-0"
+          className="w-full sm:col-span-7 md:col-span-5 pt-4 sm:pl-10 sm:pt-0"
           id="discussion"
         >
           <p className="text-4xl text-bold text-primary/60 font-serif">
@@ -24,7 +24,7 @@ export default function Home() {
           <DiscussionForum />
         </div>
         <div
-          className="w-full sm:col-span-5 md:col-span-2 sm:pl-10 md:pl-0 p-4"
+          className="w-full sm:col-span-5 md:col-span-2 sm:pl-10 md:pl-0 pt-4 sm:pt-0"
           id="market"
         >
           <p className="text-4xl text-bold text-primary/60 font-serif">
